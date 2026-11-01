@@ -3,10 +3,16 @@ apikey.env
 
 # Python compilation cache
 __pycache__/
+*.pyc
 
 # Agent runtime files
 generated_code.py
 tempCodeRunnerFile.py
 
-# Execution logs (optional: keep if you want to track logs, ignore if you want them generated fresh)
-# logs.txt
+# Logs
+logs.txt
+
+# Images/screenshots generated during testing
+image.png
+image-1.png
+*.mp4

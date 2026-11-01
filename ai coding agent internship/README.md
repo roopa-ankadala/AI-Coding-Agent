@@ -1,23 +1,22 @@
-AI Coding Agent with Self-Correction
-Overview:
-This project converts natural language prompts into Python code using Groq LLM.
+AI Coding Agent - Week 3
 
-The agent generates code, executes it safely, captures errors, and retries up to 3 times using execution feedback.
+Objective
+Build an AI agent that can:
 
-Features:
-Natural Language to Code Generation
-Automatic Code Execution
-Error Detection
-Self-Correction Loop
-Retry Mechanism
-Execution Logging
-Timeout Protection
+Read multiple Python files
+Understand project structure
+Create context summaries
+Identify related files
+Apply coordinated edits across files
+Create backups before editing
+Run tests automatically
 
-Technologies Used:
-Python
-Groq API
-dotenv
-subprocess
+Example Task:
 
-Run:
-python main.py
+"Add input validation to divide() and update tests."
+
+The agent updates:
+1.calculator.py
+2.test_calculator.py
+
+Then reruns all tests.

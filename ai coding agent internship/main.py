@@ -136,8 +136,8 @@ for attempt in range(1, MAX_ATTEMPTS + 1):
 
         code = clean_code(code)
         # For demo: force first attempt to fail
-        # if attempt == 1:
-        #     code += "\nassert False"
+        if attempt == 1:
+            code += "\nassert False"
         save_code(code)
 
         print("\nGenerated Code:\n")
