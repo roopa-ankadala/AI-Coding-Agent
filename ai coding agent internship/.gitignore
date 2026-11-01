@@ -1,18 +1,29 @@
 # Environment variables
 apikey.env
 
-# Python compilation cache
+# Python cache
 __pycache__/
 *.pyc
 
-# Agent runtime files
+# Generated files
 generated_code.py
 tempCodeRunnerFile.py
 
 # Logs
 logs.txt
+attempts/
 
-# Images/screenshots generated during testing
-image.png
-image-1.png
+# Videos
 *.mp4
+
+# Images
+*.png
+*.jpg
+*.jpeg
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

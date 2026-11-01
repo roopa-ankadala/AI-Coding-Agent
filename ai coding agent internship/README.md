@@ -1,22 +1,35 @@
-AI Coding Agent - Week 3
+Portfolio Coding Agent CLI
 
-Objective
-Build an AI agent that can:
-
-Read multiple Python files
-Understand project structure
-Create context summaries
-Identify related files
-Apply coordinated edits across files
-Create backups before editing
+Features: 
+Read project files
+Build project context
+Plan file modifications
+Apply coordinated edits
+Create backups
 Run tests automatically
+Dry-run mode
+Attempt logging
 
-Example Task:
+Architecture:
 
-"Add input validation to divide() and update tests."
+    User Task 
+        ↓ 
+    Read Project 
+        ↓ 
+    Build Context 
+        ↓ 
+    Plan Changes 
+        ↓ 
+    Apply Fixes 
+        ↓ 
+    Run Tests
+        ↓ 
+    Observe Results 
+        ↓ 
+    Retry if Needed
 
-The agent updates:
-1.calculator.py
-2.test_calculator.py
+Usage:
+python agent.py --project project_files --task "fix divide by zero bug"
 
-Then reruns all tests.
+Dry Run:
+python agent.py --project project_files --task "fix divide by zero bug" --dry-run
